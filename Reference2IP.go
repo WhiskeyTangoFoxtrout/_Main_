@@ -1,4 +1,5 @@
-//this is a refrence
+//this is a refrence Book wrk also
+type IP []byte
 
 package main 
 import("fmt"
