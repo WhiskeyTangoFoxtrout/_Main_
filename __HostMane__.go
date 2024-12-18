@@ -18,6 +18,15 @@ func main(){
     
 }
 
+type IP []byte
+
+type IPAddr struct{
+
+    IP IP
+    IPv4 string
+       
+}
+
 type Page Struct{
 
     Title string
@@ -42,8 +51,8 @@ func ViewHandler(w http.ResponseWriter, t*http.Request){
 }
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
-
-    ln, err := net.Listen("ip","MainBackend.abc:80")
+     
+    ln, err := net.Listen("ip",ipv4)
        if err != nil{
 
               fmt.Fprintf("ErrorCode: 404")
@@ -55,3 +64,11 @@ func ear(){//Ok so open port and have port listen for request and respond back w
        status,err := bufio.NewReader(conn).ReadString("\n")
        
 }
+
+func Lo(){//ima have to remember this location
+
+    ipv4 := net.IPv4(49,7,10,15)//I think this the real ip
+    I4Ski:= net.CIDRMask(16,32)//keep it multiples of 16 feel like subnets based on 16 or 8
+       
+}
+
