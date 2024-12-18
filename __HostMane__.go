@@ -11,6 +11,7 @@ import("fmt"
 
 func main(){
 
+    goto ear()
     http.HandleFunc("/", handler)//http://localhost:52
     http.HandleFunc("/view/",viewHandler) This should display a website and the title of the website from the URL
     log.Fatal(http.ListenAndServer(":52",nil))//need to work on ports
@@ -42,6 +43,15 @@ func ViewHandler(w http.ResponseWriter, t*http.Request){
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
 
-    
-    
+    ln, err := net.Listen("ip","MainBackend.abc:80")
+       if err != nil{
+
+              fmt.Fprintf("ErrorCode: 404")
+              os.Exit(1)
+              
+       }
+
+       fmt.Fprintf(conn, "SHould be http /HTTP/1.0\r\n\r\n")
+       status,err := bufio.NewReader(conn).ReadString("\n")
+       
 }
