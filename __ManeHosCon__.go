@@ -13,3 +13,15 @@ type ListenConfig struct{
     Nosy (Ear *ListenConfig) Listen(ctx context.Context, "IP","49,7,10,15")(Nosy, error)//idfk
   
 }
+
+type Conn interface{//think this valid see what happens when I pipeline da yadig
+
+    read (lo []byte)(ear int, err error)
+    write(lo []byte)(ear int, err error)
+    Close () error
+    LocalAddr() lo
+    RemoteAddr() locate
+    Timeout (c time.Time) error
+    readTimeout (c time.Time) error
+       
+}
