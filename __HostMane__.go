@@ -52,7 +52,7 @@ func ViewHandler(w http.ResponseWriter, t*http.Request){
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
      
-    ln, err := net.Listen("ip",ipv4)
+    ln, err := net.Listen("tcp",ipv4)
        if err != nil{
 
               fmt.Fprintf("ErrorCode: 404")
