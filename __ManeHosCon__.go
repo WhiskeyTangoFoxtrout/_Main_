@@ -6,15 +6,17 @@ package main
 import("fmt"
        "net")
 
-type ListenConfig struct{
+type earConfig struct{
 
-    control func(IPv4, "49,7,10,15" string, p syscall.RawConn) error
+    control func(ip string, p syscall.RawConn) error
     KeepAliveConfig KeepAliveConfig //this can be ignored if you setIt.Enable(false)//idk
     Nosy (Ear *ListenConfig) Listen(ctx context.Context, "IP","49,7,10,15")(Nosy, error)//idfk
-  
+    IP IP //set it to Ip might changeto TCP if I figure packets.
+    Mask IPMask // think this mask it
+       
 }
 
-type Conn interface{//think this valid see what happens when I pipeline da yadig
+type loConfig interface{//think this valid see what happens when I pipeline da yadig
 
     read (lo []byte)(ear int, err error)
     write(lo []byte)(ear int, err error)
