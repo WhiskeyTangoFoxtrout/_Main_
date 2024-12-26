@@ -7,9 +7,17 @@ import("fmt"
        "log"
        "net"
        "net/http"
-       "io/buff")
+       "io/buff"
+       "Configs/__ManeHosCon__"//I think this valid
+      )
+
+//cgo only use 500 system threads which is nice
+export GODEBUG=netdns=go
 
 func main(){
+
+    loConfig := GPS
+    earConfig := Ear
 
     goto ear()
     http.HandleFunc("/", handler)//http://localhost:52
@@ -20,13 +28,13 @@ func main(){
 
 type IP []byte
 
-type IPAddr struct{
+/*type IPAddr struct{
 
     IP IP
     IPv4 string
        
-}
-
+} dont think this is needed still keeping it... congfig.go
+*/
 type Page Struct{
 
     Title string
@@ -42,7 +50,7 @@ func handler( r *http.Request){
     
 }
 
-func ViewHandler(w http.ResponseWriter, t*http.Request){
+func ViewHandler(w http.ResponseWriter, t*http.Request){//Pops up on Host server
 
     title := r.URL.Path[len("/view/"):] //this the title is the URL Path you can see on a website
     p, _loadPage(title)
@@ -62,13 +70,15 @@ func ear(){//Ok so open port and have port listen for request and respond back w
 
        fmt.Fprintf(conn, "SHould be http /HTTP/1.0\r\n\r\n")
        status,err := bufio.NewReader(conn).ReadString("\n")
+       go handleConnection(conn)
        
 }
 
 func Lo(){//ima have to remember this location
 
-    ipv4 := net.IPv4(49,7,10,15)//I think this the real ip
-    I4Ski:= net.CIDRMask(16,32)//keep it multiples of 16 feel like subnets based on 16 or 8
+    ipv6 := net.IPv6(49,7,10,15)//I think this the real ip
+    I6Ski:= GPS.IPMask(ipv6)//think this valid.
+    func JoinHostPort([I6Ski], 52 string) string
        
 }
 
