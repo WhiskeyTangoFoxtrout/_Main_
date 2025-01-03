@@ -5,12 +5,14 @@ package main
 import("fmt"
        "net")
 
+ var globalDNSLookup = nil #still trynna figure a method where the user inputs a web address and I can look it up or convert it
+
 func main(){
 
     if logn = 0 {
         
         goto lips    
-    }else{searchBar}
+    }else{searchBar(*usrNput)}
     
 }
 
