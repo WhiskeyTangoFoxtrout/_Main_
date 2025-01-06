@@ -2,11 +2,11 @@
 
 type time struct{
 
-    //
+    //Idk feel like I need to add a clock
   
 }
 
-type timer struct{
+type timer struct{//IDK if this a good timer
 
     Sw := time.Timer(64 * time.Second)
     
