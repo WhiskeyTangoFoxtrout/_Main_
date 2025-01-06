@@ -1,6 +1,6 @@
 //ima try and make this a config file for __HostMane__\
 //Felt like it would be better to import this like a package... Mane starting ta drag it
-
+//still figuring how the line up and work off each other. This config file wit the client config file
 package main
 
 import("fmt"
