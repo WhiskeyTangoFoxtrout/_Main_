@@ -1,4 +1,4 @@
-type JohnLo interface{
+type JohnLo interface{//****add DNS look up and a way to communicate to Login Page
 
     Read(IP []byte)(n int, err error)
     Write(IP []byte)(n int, err error)
