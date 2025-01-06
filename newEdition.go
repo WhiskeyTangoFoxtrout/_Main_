@@ -34,7 +34,7 @@ func lips(){
        go handleConnection(conn)
 }
 
-func searchBar(r *Resolver){
+func searchBar(r *Resolver){//**********************************WORK ON DIS*************************************
 
     //Sb,err := LookupAddr.UsrNputAddr
     sb,err := LookupCNAME(Search)([],err)//search is the userinput , and the C gile where its located
