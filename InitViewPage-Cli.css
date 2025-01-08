@@ -1,0 +1,51 @@
+/*this is search bar stuff*/
+.SearchBar{
+
+    overflow: hidden;
+    background-color: #7851A9
+  
+}
+
+/*this deals with the links*/
+.SearchBar a{
+
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 27px;
+    text-decoration: none;
+    font-size: 23px;
+  
+}
+
+/*hover whenever there is a mouse over the link*/
+.SearchBar a:hover{
+
+    background-color:#FFD700;
+    color: #143306;
+    
+}
+/*when your on that page*/
+.topnav a.active{
+
+    background-color: #FF11C4;
+    color: #FF113D;
+    
+}
+
+/*No bap shouts out to docs and tutorials*/
+/*who knew this was an option*/
+@media screen and (max-width: 600px){
+    .topnav a,.topnav input[type=text]{
+        float:none;
+        dispaly:block;
+        text-align: left;
+        width:100%;
+        margin:0;
+        padding:14px;
+    }
+    .topnav input[type=text]{
+        border:1px solid #FFFF11;
+    }
+}
