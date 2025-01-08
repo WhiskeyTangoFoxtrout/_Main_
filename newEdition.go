@@ -3,7 +3,9 @@
 package main
 
 import("fmt"
-       "net")
+       "net"
+       "github.com/main/WorkSite/InitViewPage-Cli.css"//think this linkes it
+      )
 
  var globalDNSLookup = nil #still trynna figure a method where the user inputs a web address and I can look it up or convert it
 
