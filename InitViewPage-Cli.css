@@ -34,6 +34,43 @@
     
 }
 
+.postButton{
+
+    display:contents;/*no border or what not and no bars*/
+    position:relative;
+    left: 50px;
+    top: -750px;
+    border-radius:75%;/*noice if this works*/
+    background-color: #cfa0db;
+    padding: 20px;
+    
+    
+}
+
+.postButton:hover + .paws{/*goated I need some docs on CSS*/
+
+    background-color:d3d3d3;opacity:0.4;/*think this is just backgrond color*/
+    padding:2px;
+    border-radius: 25%;/************************************************************************/
+    
+}
+
+.paw{
+
+    background-color:#ffff11
+    border-radius:80%;
+    display:fixed-right;
+    padding:5px;
+    
+}
+
+.print{
+
+    /*This is something*/
+    
+}
+
+
 /*No bap shouts out to docs and tutorials*/
 /*who knew this was an option*/
 @media screen and (max-width: 600px){
