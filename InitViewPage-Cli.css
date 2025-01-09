@@ -86,3 +86,16 @@
         border:1px solid #FFFF11;
     }
 }
+
+.PostBox{
+
+    width:650px;
+    height:400px;
+    display: fixed-center;
+    border-style: groove;
+    border:3 px;
+    border-color:#343D46;
+    padding: 10px;
+    content-style:dotted;
+    
+}
