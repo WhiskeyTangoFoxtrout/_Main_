@@ -4,7 +4,8 @@ package main
 
 import("fmt"
        "net"
-       "github.com/main/WorkSite/InitViewPage-Cli.css"//think this linkes it
+       "github.com/main/WorkSite/InitViewPage-Cli.css"//think this links it
+       "os"
       )
 
  var globalDNSLookup = nil #still trynna figure a method where the user inputs a web address and I can look it up or convert it
@@ -43,4 +44,10 @@ func searchBar(r *Resolver){//**********************************WORK ON DIS*****
     
     
     
+}
+
+func Pipe()(r *newEdition w *OffSite){
+
+       //Need to put an error and some other methods in this joint
+       
 }
