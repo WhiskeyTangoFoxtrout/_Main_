@@ -1,6 +1,14 @@
-<!--I need some sites so I can at least look at my servers work-->
+/*I need some sites so I can at least look at my servers work
 <!--How can I get you to post something and have it on yo orgin page
-ima basically make the home feed a randomized page of basically dms and videos you like-->
+ima basically make the home feed a randomized page of basically dms and videos you like*/
+//this bcam a go file onna go
+
+import(
+    "html/template"
+    "os"
+    "net/http"
+)
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,5 +40,43 @@ ima basically make the home feed a randomized page of basically dms and videos y
         <input type="text" placeholder="Whats on your mind">
     </div>
 </body>
+//crap non of this should be http
+
+func handler(){
+
+    nil //getting somewhere
     
+}
+
+func main(){
+    nil
+    //gottta hook this up to the IPv6 on the clientside and I need a handlerFunc
+}
+//ima have to get rid of all this http
+func renderTemplate(w http.ResponseWriter, r *http.Resquest){
+
+    CliWrkSite := r.URL.Path[len("/view/"):]
+    p,_:= loadPage(CliWrkSite)
+    renderTemplate(w, "view", p)
     
+}
+
+func viewHandler(w http.ResponseWriter, r *http.Request){//hoping this hook up to the CliHoServe bc it got the URL
+
+    CliWrkSite := r.URL.Path[len("/view/"):]
+    p,_ := loadPage(CliWrkSite)
+    renderTemplate(w, "view", p)
+    
+}
+
+func editHandler(w http.ResponseWriter, r *http.Request){
+
+    CliWrkSite := r.URL.Path[len("/view/"):]
+    p, err := loadPage(CliWrkSite)
+    if err != nil{
+
+        p = &Page{CliWrkSite:CliWrkSite}
+        
+    }
+    renderTemplate
+}
