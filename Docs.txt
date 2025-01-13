@@ -1,0 +1,24 @@
+#this getting complex. I need to write this down
+#*
+Main Obj
+
+anything hooking to the mainserver IPv6
+client to client IPv4
+anything else read the  program its not MC
+
+*#
+
+"lo" is a reference to the ipaddress.
+
+With the Ips I got ipv4/6 with the host server and the port connection at 52:
+    main client server should hook up the the IPv6
+    under da hood should be at IPv4
+
+"ear" refers to the lister func#mainly server stuff but lowkey network:
+        pass#ima need this space later
+
+(1)URL is MainBackend.abc:53#this is the main host server(basically my operator)
+
+"pawPrint" is a refer to the "postbox" and Soil_options
+"Postbox" is where you can post and meant to be written on a dataserver and meant to call the ManeServ
+
