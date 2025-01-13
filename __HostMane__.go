@@ -10,9 +10,14 @@ import("fmt"
        "io/buff"
        "Configs/__ManeHosCon__"//I think this valid
       )
-
+//***********************************Global Variables*******************************************************************
 //cgo only use 500 system threads which is nice
-export GODEBUG=netdns=go
+export GODEBUG=netdns=go + 1
+
+//I need some sockets in the future
+var nativeEdian binary.ByteOrder
+
+//**********************************************************************THE ACTUAL CONNECT PROGRAM*************************
 
 func main(){
 
@@ -25,6 +30,8 @@ func main(){
     log.Fatal(http.ListenAndServer(":52",nil))//need to work on ports
     
 }
+
+//****************************************************************Const and types******************************************
 
 type IP []byte
 
@@ -42,21 +49,11 @@ type Page Struct{
     
 }
 
+//*****************************************************************Server-to-Saver*************************************************
+
 //ima need a save func but idk what ima save just yet. I just want it to echo for rn
 
-func handler( r *http.Request){
-
-    fmt.Fprintf(w "This is the Users BackEnd")//I think this will write out the URL
-    
-}
-
-func ViewHandler(w http.ResponseWriter, t*http.Request){//Pops up on Host server
-
-    title := r.URL.Path[len("/view/"):] //this the title is the URL Path you can see on a website
-    p, _loadPage(title)
-    fmt.Fprintf(w, "<h1>s%</h1><div>%s</div>", p.Title, p.Body)//crude this helps make a website and displays the title
-    
-}
+//****************************************************ACtual Engine and raw connect****************************************
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
      
@@ -69,13 +66,14 @@ func ear(){//Ok so open port and have port listen for request and respond back w
        }
 
        fmt.Fprintf(conn, "SHould be http /HTTP/1.0\r\n\r\n")
-       status,err := bufio.NewReader(conn).ReadString("\n")
-       go handleConnection(conn)
+       status,err := bufio.NewReader(GPS).ReadString("\n")
+       go handleConnection(gps)
        
 }
 
 func Lo(){//ima have to remember this location
 
+    powerDialer := net.IPv6(49,7,10,15)
     ipv6 := net.IPv6(49,7,10,15)//I think this the real ip
     I6Ski:= GPS.IPMask(ipv6)//think this valid.
     func JoinHostPort([I6Ski], 52 string) string
