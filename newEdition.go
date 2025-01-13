@@ -8,7 +8,9 @@ import("fmt"
        "os"
       )
 
- var globalDNSLookup = nil #still trynna figure a method where the user inputs a web address and I can look it up or convert it
+ var globalDNSLookup = nil //still trynna figure a method where the user inputs a web address and I can look it up or convert it
+
+ var postBox = []
 
 func main(){
 
@@ -21,7 +23,7 @@ func main(){
 
 func lips(){
 
-    conn, err := net.Dial("ipv4","Mainbackend.abc:80")
+    conn, err := net.Dial("ipv6","Mainbackend.abc:80")
     if err != nil {
 
         os.Exit(1)//this should call 
@@ -46,8 +48,9 @@ func searchBar(r *Resolver){//**********************************WORK ON DIS*****
     
 }
 
-func Pipe()(r *newEdition w *OffSite){
-
-       //Need to put an error and some other methods in this joint
+func siteTyper{
        
+       if postBox +=1{//idk what to make this
+              net.Pipe()(r *newEdition w *OffSite,err error)
+       }else{contnue
 }
