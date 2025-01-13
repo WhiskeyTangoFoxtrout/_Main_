@@ -8,6 +8,8 @@ anything else read the  program its not MC
 
 *#
 
+******************************************************Def
+
 "lo" is a reference to the ipaddress.
 
 With the Ips I got ipv4/6 with the host server and the port connection at 52:
@@ -22,3 +24,12 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
 "pawPrint" is a refer to the "postbox" and Soil_options
 "Postbox" is where you can post and meant to be written on a dataserver and meant to call the ManeServ
 
+**********************************************Configs
+
+*ManeHosCon:
+    earConfig is meant to be some type of listener method. gotta flush it some mo
+    loConfig meant for theconnection handles
+    Operator is meant to handle the switchboard and connections
+    switchbord is helping the operators(like tha machine it would be more bulky)
+
+*****************************************************************
