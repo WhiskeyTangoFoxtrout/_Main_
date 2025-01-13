@@ -43,7 +43,7 @@ type Page Struct{
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
      
-    ln, err := net.Listen("tcp",ipv4)
+    ln, err := net.Listen("tcp",ipv6)
        if err != nil{
 
               fmt.Fprintf("ErrorCode: 404")
@@ -59,7 +59,8 @@ func ear(){//Ok so open port and have port listen for request and respond back w
 
 func Lo(){//ima have to remember this location
 
-    ipv6 := net.IPv6(49,7,10,15)//I think this the real ip
+    ipv6 := net.IPv6(49,7,10,15)//I think this the real ip this my URL also. See if I can make this a name...Handler on IPv6
+    strings.ToLower("MainBackEnd.abc") := net.IPv6(49,7,10,15)//
     I6Ski:= GPS.IPMask(ipv6)//think this valid.
     func JoinHostPort([I6Ski], 52 string) string
        
