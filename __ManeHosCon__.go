@@ -28,6 +28,7 @@ type loConfig interface{//think this valid see what happens when I pipeline da y
     RemoteAddr() locate
     Timeout (c time.Time) error
     readTimeout (c time.Time) error
+    hardwareAddr net.HardwareAddr
        
 }
 
