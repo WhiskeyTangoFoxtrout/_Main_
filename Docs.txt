@@ -32,4 +32,9 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
     Operator is meant to handle the switchboard and connections
     switchbord is helping the operators(like tha machine it would be more bulky)
 
-*****************************************************************
+*****************************************************************Socks
+
+keeping tabs on my socks right here
+apparently sockets is like a lmph node where informations from top-level,skin-level, user-application level and take the information to hardware connections(Central Nervous System)
+
+
