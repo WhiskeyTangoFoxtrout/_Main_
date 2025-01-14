@@ -58,3 +58,8 @@ how characteristics are made:
 network routines allow sockets to get info from DNS,host,protocol, service, network files
 
 the addr()func on the socket api decides the format of the
+
+***************************************************************Port workers
+port is btw 1 - 65,535
+holy crap screw ports its got something to do with protocol numbers
+
