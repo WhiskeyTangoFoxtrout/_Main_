@@ -32,9 +32,29 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
     Operator is meant to handle the switchboard and connections
     switchbord is helping the operators(like tha machine it would be more bulky)
 
-*****************************************************************Socks
+*****************************************************************Socks its the freaking connnect crap
 
 keeping tabs on my socks right here
 apparently sockets is like a lmph node where informations from top-level,skin-level, user-application level and take the information to hardware connections(Central Nervous System)
+sockets are an End point
+#this helps or is handy with remote to local access
+#API-> Application Program Interface... why is not of it written in an acutally lingo nvm go J.S(Sockets are the standard)
+sockets are supposed to be "thread-safe"
+sockets a reperesnted by an int called socket descriptor
+socket only alive when the link is open
+you can do socket to socket connection and communcation
 
+socket provide two connection:
+    (1) connection oriented:
+        which means there already an established line.(Means the machines has a connection with the other computer)
+    (2) connectionless:
+        is where there is not established line btw the client and host server
 
+how characteristics are made:
+    socket address familty determines tbe format of the address for the socket
+    the type determine the form of communication
+    the protocols its built with is what the API must build upon
+
+network routines allow sockets to get info from DNS,host,protocol, service, network files
+
+the addr()func on the socket api decides the format of the
