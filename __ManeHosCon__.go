@@ -31,7 +31,7 @@ type loConfig interface{//think this valid see what happens when I pipeline da y
        
 }
 
-type Operator struct{//basically Resolver also my dialer method I mean look at the name
+type Operator struct{//basically Resolver
 
     preferGo bool
     strictErrors bool
@@ -39,7 +39,7 @@ type Operator struct{//basically Resolver also my dialer method I mean look at t
     
 }
 
-type SwitchBoard struct{
+type SwitchBoard struct{//part dialer meant to complement the Op.
 
     timeout time.ParseDuration("1m30s")//if Operator.Timeout ever get called
     deadline time.Time
@@ -48,6 +48,9 @@ type SwitchBoard struct{
     fallBackDelay time.ParseDuration("3m")//actually what checks dual stack path
     keepAliveConfig KeepAliveConfig
     operator *Operator
+    Cancel <-chan struct{}//if you could cancel a channel this would
+    Control func(network, address string, c syscall.RawConn) error //
+    ControlContext func(ctx context.Context, network, address string, c syscall.RawConn) error
     
 }
 
