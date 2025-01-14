@@ -29,3 +29,15 @@ func main(){
     }
     os.Exit(0)
 }
+
+checkError(err)
+// number 1 is meant for host to host
+var msg [512]byte
+msg[0] = //think the protocol number dictate the port 
+msg[] =   //code 0
+msg[] = 
+msg[] = 
+msg[] = 
+msg[] =  //mite b impotant
+msg[] = 
+msg[] = //mite be impotant
