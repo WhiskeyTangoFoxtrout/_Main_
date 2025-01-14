@@ -16,6 +16,9 @@ export GODEBUG=netdns=go + 1
 
 //I need some sockets in the future
 var nativeEdian binary.ByteOrder
+//***********************************************************************SOCKETS*******************************************
+
+//screw raw sockets! I gotta go read the docs but I got an interview brb
 
 //**********************************************************************THE ACTUAL CONNECT PROGRAM*************************
 
@@ -25,11 +28,10 @@ func main(){
     earConfig := Ear
 
     goto ear()
-    http.HandleFunc("/", handler)//http://localhost:52
-    http.HandleFunc("/view/",viewHandler) This should display a website and the title of the website from the URL
-    log.Fatal(http.ListenAndServer(":52",nil))//need to work on ports
     
 }
+
+//no idea how to display the URL... LMAO TYPE NUMBAS LMAOOOO
 
 //****************************************************************Const and types******************************************
 
