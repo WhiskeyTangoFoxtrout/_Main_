@@ -23,13 +23,13 @@ func EchoPort(){
     // number 1 is meant for host to host
     var msg [512]byte
     msg[0] = 8//think the protocol number dictate the port this dictiate the port functionality 8 is host to host pure data transfer
-    msg[1] = 0  //code 0
+    msg[1] = 0  //code 0 GIVES AN options for ipv6
     msg[2] = 0
     msg[3] = 0
     msg[4] = 0
-    msg[5] = 1 //mite b impotant identifyer
+    msg[5] = 58 //mite b impotant identifyer
     msg[6] = 0
-    msg[7] = 1//mite be impotant
+    msg[7] = 58//mite be impotant
     len := 8
 
     check16 := check16Sum(msg[0:len])
