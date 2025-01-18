@@ -24,6 +24,9 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
 "pawPrint" is a refer to the "postbox" and Soil_options
 "Postbox" is where you can post and meant to be written on a dataserver and meant to call the ManeServ
 
+"rcr" -> means reciever
+"src" -> means source/sender
+
 **********************************************Configs
 
 *ManeHosCon:
@@ -45,3 +48,5 @@ Run the pipeline.Parser to read the package and send it to other ports and pipel
     its proto 8 and its meant for IPv6 so remeber to set that...guess I should make a gui for that
 
 *FileTransfer...InProgress
+
+**************************PIPELINE***********************************************
