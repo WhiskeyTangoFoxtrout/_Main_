@@ -34,3 +34,17 @@ func check16Sum(msg []byte/*workin on the math here...*/){
     var answer uint16 = uint16(^sum)
     return answer
 }
+
+/*
+
+type Block interface {
+    BlockSize() int
+    Encrypt(dst, src []byte)
+    Decrypt(dst, src []byte)
+}
+
+type Stream interface {
+    XORKeyStream(dst, src []byte)
+}
+
+been needing a skeleton*/
