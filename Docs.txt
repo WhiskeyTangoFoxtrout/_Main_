@@ -34,32 +34,14 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
 
 *****************************************************************Socks its the freaking connnect crap
 
-keeping tabs on my socks right here
-apparently sockets is like a lmph node where informations from top-level,skin-level, user-application level and take the information to hardware connections(Central Nervous System)
-sockets are an End point
-#this helps or is handy with remote to local access
-#API-> Application Program Interface... why is not of it written in an acutally lingo nvm go J.S(Sockets are the standard)
-sockets are supposed to be "thread-safe"
-sockets a reperesnted by an int called socket descriptor
-socket only alive when the link is open
-you can do socket to socket connection and communcation
-
-socket provide two connection:
-    (1) connection oriented:
-        which means there already an established line.(Means the machines has a connection with the other computer)
-    (2) connectionless:
-        is where there is not established line btw the client and host server
-
-how characteristics are made:
-    socket address familty determines tbe format of the address for the socket
-    the type determine the form of communication
-    the protocols its built with is what the API must build upon
-
-network routines allow sockets to get info from DNS,host,protocol, service, network files
-
-the addr()func on the socket api decides the format of the
-
+#socket = port + Ip... headache #*This a personal reminder*# two machine gotta share port numbers
+*dont have a socket protocol yet but its a raw socket connect:
+    hos Machines listen for a certain port... from a port package almost like a sec feature but its not,
+    it would only accept a request for the package ifs the port keys match then#*in progress
+Run the pipeline.Parser to read the package and send it to other ports and pipelines.
 ***************************************************************Port workers
-port is btw 1 - 65,535
-holy crap screw ports its got something to do with protocol numbers
 
+*Echo:
+    its proto 8 and its meant for IPv6 so remeber to set that...guess I should make a gui for that
+
+*FileTransfer...InProgress
