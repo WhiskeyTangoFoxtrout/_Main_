@@ -1,0 +1,32 @@
+#this usally applies to all my notes... using this bc just realized it isnt on me newwer page
+#Comment
+#*Multi-ln comment*#
+#----------RULES/SYNTAX
+
+*if there isnt a spec char behind the last str char its the end of the cmd/ln/wrd
+
+#****************************
+"" -> keyword#usally come with def or explanat
+:
+  this is used for branch/tangent/in-depth/ thought pretaing to info on allign with the colon(:):
+  commas all,
+  ow allow the ln to be broken up#still gotta be on same colm pos
+#*proper importance marker(pim) syntax*#"pim":
+  "*"#*1*#main point or info should be follow with a:#colon
+    "-"#*2*#to init the princely mark:
+      "+"#*3*#this is clergy's sigil:
+        "&"#*4*#Noble Standard
+
+*"#*Example to shift*#" ->#*<-that arrow*# data to an actual talking point:
+    -that is set as the main talkin point
+
+*know this a lil flexiable.(but serves a set idea or interpetations of the instr/word),
+-> servs as basically the arg for methods or walkin wit the wrd(the args)
+*the forward slash"/"/letsdiff/keywords/branch together/ and,
+make shorthand for multi/ example explination
+
+*"1"st,
+"2"nd,
+"3"rd,
+"4th",
+etc
