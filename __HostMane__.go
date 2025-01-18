@@ -5,10 +5,10 @@ package main
 
 import("fmt"
        "log"
-       "net"
-       "net/http"
+       "net"//actual web stuff
+       "os"//might need to write somewhere...
        "io/buff"
-       "Configs/__ManeHosCon__"//I think this valid
+       "Configs/__ManeHosCon__"//I think this valid...HostconsforPipeln Connection???its not really ports/sockets
       )
 //***********************************Global Variables*******************************************************************
 //cgo only use 500 system threads which is nice
@@ -24,8 +24,8 @@ var nativeEdian binary.ByteOrder
 
 func main(){
 
-    loConfig := GPS
-    earConfig := Ear
+    loConfig := GPS// conn
+    earConfig := Ear//its the addr package IP only gotta build the IPv6 or the ports
 
     goto ear()
     
@@ -58,7 +58,7 @@ type Page Struct{
 //****************************************************ACtual Engine and raw connect****************************************
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
-     
+     //have to build fo config
     ln, err := net.Listen("tcp",ipv4)
        if err != nil{
 
@@ -81,4 +81,8 @@ func Lo(){//ima have to remember this location
     func JoinHostPort([I6Ski], 52 string) string
        
 }
+
+//*******************************************************************acutal pipeln opts and configs***************************
+
+//gone have to listen to ear interpt ear...identify port and send info through host port list to the needb machine
 
