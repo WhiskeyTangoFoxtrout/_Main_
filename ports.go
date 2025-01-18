@@ -37,4 +37,3 @@ func EchoPort(){
     msg[3] := byte(check & 255) //wrkn onnat one
   
 }
-
