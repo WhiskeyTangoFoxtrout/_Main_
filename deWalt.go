@@ -8,6 +8,13 @@ import( "fmt"
         "github.com/__Main__/hood/unda/keyStone.go"
         "github.com/__Main__/hood/unda/CoCon.go")
 
+//******************************GlbVars!**************************
+
+//the map the holds the data goes rite here... rember not to write to to a txt
+
+//****************************************************
+
+
 func main(){
 
 
@@ -16,4 +23,27 @@ func main(){
     //
 }
 
+func Marco(){//1st
 
+    nil//this the translator... set it just CoCon.testimony("ciper"/"crypt")
+        
+}
+
+func SecCheck(){//2nd
+
+    nil// need a way to check it this came from an real machine... there a func to fine hardware ip/addr
+
+}
+
+func scale(){//3rd
+
+    nil //this gone check if the packets/data_stream weigh enough
+    //also would psh the packets if it pass SechCheck()/Marco() to the ponyexs() 
+    
+}
+
+func ponyexprs(){
+
+    nil//what actually send the data.stdout()
+    
+}
