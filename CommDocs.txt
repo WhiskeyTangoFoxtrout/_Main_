@@ -1,0 +1,81 @@
+#this getting complex. I need to write this down
+#*
+Main Obj
+
+anything hooking to the mainserver IPv6
+client to client IPv4
+anything else read the  program its not MC
+also might build an os bc why not I need an Gui might as well work on a filetranser(Directory) system
+since I need a GUI and userinput might as well mess with some hardware stuff bc why not. Socket and ports its basically the same
+I just to wrk on my file transer system
+
+*#
+            ------------------------Communication Docs refer...(cd)--------------------------
+******************************************************Def
+
+"lo" is a reference to the ipaddress.
+
+With the Ips I got ipv4/6 with the host server and the port connection at 52:
+    main client server should hook up the the IPv6
+    under da hood should be at IPv4
+
+"ear" refers to the lister func#mainly server stuff but lowkey network:
+        pass#ima need this space later
+
+(1)URL is MainBackend.abc:53#this is the main host server(basically my operator)
+
+"pawPrint" is a refer to the "postbox" and Soil_options
+"Postbox" is where you can post and meant to be written on a dataserver and meant to call the ManeServ
+
+"rcr" means reciever
+"src" means source/sender
+"frm" means from
+
+"clientle" refer to client-machines(anything long lns):
+    -machines rely fr ear.(reply)/opr(Operator)/switchboard(withHlpfrmDaOpr)/rcr.lo(IpAddr)/,#*sumthing of-Akin*#
+
+**********************************************Configs
+
+*ManeHosCon:
+    -earConfig is meant to be some type of listener method. gotta flush it some mo
+    -loConfig meant for theconnection handles
+    -Operator is meant to handle the switchboard and connections
+    -switchbord is helping the operators(like tha machine it would be more bulky)
+
+*****************************************************************Socks its the freaking connnect crap
+
+*would need an way to store the info(temp) when program close data reset#*dont want it on masontry*#,
+prolly a simple glbvar...key and map think its called or use a map:
+    -also gone find a way to have the data pass the the trials(secChek)
+
+#socket = port + Ip... headache #*This a personal reminder*# two machine gotta share port numbers
+*dont have a socket protocol yet but its a raw socket connect:
+    -hos Machines listen for a certain port... from a port package almost like a sec feature but its not,
+    -it would only accept a request for the package ifs the port keys match then#*in progress
+-Run the pipeline.Parser to read the package and send it to other ports and pipelines.
+
+*name of the socket autonator-> deWalt.go:
+    -has a parser to read:
+        +which Port it come frm/or src ipAddr where it comes 1,
+        which port its should hook up to/ a rcr ipAddr
+        +have a way for the parser to run a sec check on header and fail check for mis-sent packaages/or to many packets overloading a port:
+            &no sysexit but a pushbk_req(feature name pshBkreq())
+    -have a connection function that conn a pipeln to send info
+
+*********************************CoCon*******************
+
+*its got basically what makes dewalt work the Raw.funcs(ThatmakesItwrk):
+    -dewalt.go make its easier to rn and build an actual main func#programs get mess when you got 15 modules/objs and 200ln program'd
+*its gone have a basic sec check the dewalt should be able to solve:#doing clergy games(praises) wit the encryption
+
+*gotta jumble data:
+    - get marco to translate#u get ot
+
+***************************************************************Port workers
+
+*Echo:
+    its proto 8 and its meant for IPv6 so remeber to set that...guess I should make a gui for that
+
+*FileTransfer...InProgress
+
+**************************PIPELINE***********************************************
