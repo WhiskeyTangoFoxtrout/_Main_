@@ -9,8 +9,7 @@ import("fmt"
        "time")
 
 type earConfig struct{//I forgot wat this for
-
-    control func(ip string, p syscall.RawConn) error
+    //addr/something else,listen fo da lo to drop
     KeepAliveConfig KeepAliveConfig //this can be ignored if you setIt.Enable(false)//idk
     Nosy (Ear *ListenConfig) Listen(ctx context.Context, "IP","49,7,10,15")(Nosy, error)//idfk
     IP IP //set it to Ip might changeto TCP if I figure packets.
@@ -20,13 +19,14 @@ type earConfig struct{//I forgot wat this for
 }
 
 type loConfig interface{//think this valid see what happens when I pipeline da yadig
-//this is for conn
-    read (lo []byte)(ear int, err error)
-    write(lo []byte)(ear int, err error)
+//this is for conn/ kinda wanna see if ican loConfig.control()
+    control func(ip string, p syscall.RawConn) error
+    read (lo []byte)(ear int, err error)//I need these arguements ima try to have ear listen for a port/ lo be da IP
+    write(lo []byte)(ear int, err error) 
     Close () error
     LocalAddr() lo
     RemoteAddr() locate
-    Timeout (c time.Time) error
+    Timeout (c time.Time) error 
     readTimeout (c time.Time) error
     hardwareAddr net.HardwareAddr
        
