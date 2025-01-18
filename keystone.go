@@ -1,5 +1,5 @@
 package main
-
+//pipeln really for the socket its so its can be more automative and opt filled. still need to set up an GUI
 import (
         "fmt"
         "sys"
