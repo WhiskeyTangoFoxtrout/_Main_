@@ -53,15 +53,22 @@ type Page Struct{
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
      //have to build fo config
-    EAR, err := net.Listen("ip",ipv4,)
+    EAR, err := net.Listen("ip",Lo.ipv4())
        if err != nil{
 
               fmt.Fprintf("ErrorCode: 404")
               os.Exit(1)
               
        }
-
-       fmt.Fprintf(GPS, "SHould be http /HTTP/1.0\r\n\r\n")
+       
+       for{
+              EAR,err := ln.Accept()
+              if err != nil{
+                     or.Args[1]/os.Exit(1)//find a way to boot you back to the page
+              }
+       }
+       
+       fmt.Fprintf(GPS, "SHould be ip /HTTP/1.0\r\n\r\n")
        status,err := bufio.NewReader(GPS).ReadString("\n")
        go handleConnection(gps)
        
@@ -69,10 +76,10 @@ func ear(){//Ok so open port and have port listen for request and respond back w
 
 func Lo(){//ima have to remember this location
 
-    powerDialer := net.IPv4(49,7,10,15)
-    ipv4 := net.IPv4(49,7,10,15)//I think this the real ip
+    powerDialer := net.IPv4(49,7,87,15)
+    ipv4 := net.IPv4(49,7,30,15)//I think this the real ip
     I4Ski:= GPS.IPMask(ipv4)//think this valid.
-    func JoinHostPort([I4Ski], sockWrk.boomTubes.EchoPort() string) string //ok so this the Ip, holy crap still not wrds
+    func JoinHostPort([I4Ski], "sockWrk.boomTubes.EchoPort()" ){ "MainBackEnd.abc"} //ok so this the Ip, holy crap still not wrds
        
 }
 
