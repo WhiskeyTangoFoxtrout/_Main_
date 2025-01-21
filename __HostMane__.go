@@ -9,6 +9,7 @@ import("fmt"
        "os"//might need to write somewhere...
        "io/buff"
        "Configs/__ManeHosCon__"//I think this valid...HostconsforPipeln Connection???its not really ports/sockets
+       "github.com/__main__/hood/unda/ports.go"
       )
 //***********************************Global Variables*******************************************************************
 //cgo only use 500 system threads which is nice
@@ -52,7 +53,7 @@ type Page Struct{
 
 func ear(){//Ok so open port and have port listen for request and respond back with an "WE'RE LIVE FROM DA UNDAGROUND"
      //have to build fo config
-    ln, err := net.Listen("tcp",ipv4)
+    EAR, err := net.Listen("ip",ipv4,)
        if err != nil{
 
               fmt.Fprintf("ErrorCode: 404")
@@ -60,7 +61,7 @@ func ear(){//Ok so open port and have port listen for request and respond back w
               
        }
 
-       fmt.Fprintf(conn, "SHould be http /HTTP/1.0\r\n\r\n")
+       fmt.Fprintf(GPS, "SHould be http /HTTP/1.0\r\n\r\n")
        status,err := bufio.NewReader(GPS).ReadString("\n")
        go handleConnection(gps)
        
@@ -71,9 +72,11 @@ func Lo(){//ima have to remember this location
     powerDialer := net.IPv4(49,7,10,15)
     ipv4 := net.IPv4(49,7,10,15)//I think this the real ip
     I4Ski:= GPS.IPMask(ipv4)//think this valid.
-    func JoinHostPort([I4Ski], 52 string) string
+    func JoinHostPort([I4Ski], sockWrk.boomTubes.EchoPort() string) string //ok so this the Ip, holy crap still not wrds
        
 }
+
+//just realized i need to open my own port
 
 //*******************************************************************acutal pipeln opts and configs***************************
 
