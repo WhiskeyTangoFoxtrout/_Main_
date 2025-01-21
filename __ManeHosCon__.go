@@ -29,6 +29,8 @@ type loConfig interface{//think this valid see what happens when I pipeline da y
     Timeout (c time.Time) error 
     readTimeout (c time.Time) error
     hardwareAddr net.HardwareAddr
+    IP []byte
+    Mask IPMask
        
 }
 
