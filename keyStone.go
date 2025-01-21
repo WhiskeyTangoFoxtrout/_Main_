@@ -1,5 +1,5 @@
 package main
-//pipeln really for the socket its so its can be more automative and opt filled. still need to set up an GUI
+//pipeln really 2 the socket(preSoc) its so its can be more automative and opt filled. still need to set up an GUI
 import (
         "fmt"
         "sys"
@@ -15,18 +15,24 @@ type roughneck interface{
     
 }
 
-//**********************************actual I/o stream that moves the data around
-type keyStone interface{
+//**********************************actual I/o stream that moves the data around/groups/search ports(look for rats)/
+
+//start point
+
+
+type keyStone interface{ //actual floln
 
     func flow(oil byte[]){
 
-        return Meter( oil.stdin() byte[])
+        return Meter( oil.stdout() byte[])
         
     }
     
 }
 
-//*********************************************************************this controls flow
+//end point
+
+//*********************************************************************this controls flow/
 
 type Vale interface{//want this to be more like vale.stdio... sys.stdwrite...sys.stdflush()
     // thx go!
@@ -46,7 +52,7 @@ type Vale interface{//want this to be more like vale.stdio... sys.stdwrite...sys
 
 type pipes struct{
 
-    stdin io.Reader//shouts out to the state but im finna trick on it
+    stdinn io.Reader//shouts out to the state but im finna trick on it
     stdout io.Writer
     stderr io.Error
     written int    
