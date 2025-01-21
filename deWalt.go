@@ -1,4 +1,6 @@
-//socket where ports get read
+//socket where ports(ip2?) get read
+//need to intercept before request reach the Host servers(cliLvl get dey own wrk)...remember its however I send it
+//ima assume the ipNport sent here is a header
 package main
 
 import( "fmt"
@@ -14,10 +16,7 @@ import( "fmt"
 //the map the holds the data goes rite here... rember not to write to to a txt
  pE := []byte
 
-
 //****************************************************
-
-ipv4HeaderSize = 20
 
 func main(){
 
@@ -41,7 +40,9 @@ func SecCheck(){//2nd
 
 func scale(){//3rd
 
-    nil //this gone check if the packets/data_stream weigh enough
+    if ipheader != 20{
+            return 
+    } //this gone check if the packets/data_stream weigh enough
     //also would psh the packets if it pass SechCheck()/Marco() to the ponyexs() 
     
 }
@@ -50,4 +51,10 @@ func ponyexprs(manifesto []byte *pE){
 
     nil//what actually send the data.stdout()
     
+}
+
+func LoCate(){
+
+
+        
 }
