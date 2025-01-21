@@ -4,9 +4,10 @@ package main
 import( "fmt"
         "io"
         "os"
-        "github.com/__Main__/hood/unda/ports.go"
-        "github.com/__Main__/hood/unda/keyStone.go"
-        "github.com/__Main__/hood/unda/CoCon.go")
+        "github.com/__Main__/hood/unda/ports.go"//hook up to mine
+        "github.com/__Main__/hood/unda/keyStone.go"//
+        "github.com/__Main__/hood/unda/CoCon.go"//maise
+        )
 
 //******************************GlbVars!**************************
 
