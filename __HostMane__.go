@@ -24,8 +24,8 @@ var nativeEdian binary.ByteOrder
 
 func main(){
 
-    loConfig := GPS// conn
-    earConfig := Ear//its the addr package IP only gotta build the IPv6 or the ports
+    loConfig() := GPS// conn
+    earConfig() := Ear//its the addr package IP only gotta build the IPv6 or the ports
 
     goto ear()
     
@@ -37,13 +37,6 @@ func main(){
 
 type IP []byte
 
-/*type IPAddr struct{
-
-    IP IP
-    IPv4 string
-       
-} dont think this is needed still keeping it... congfig.go
-*/
 type Page Struct{
 
     Title string
@@ -75,10 +68,10 @@ func ear(){//Ok so open port and have port listen for request and respond back w
 
 func Lo(){//ima have to remember this location
 
-    powerDialer := net.IPv6(49,7,10,15)
-    ipv6 := net.IPv6(49,7,10,15)//I think this the real ip
-    I6Ski:= GPS.IPMask(ipv6)//think this valid.
-    func JoinHostPort([I6Ski], 52 string) string
+    powerDialer := net.IPv4(49,7,10,15)
+    ipv4 := net.IPv4(49,7,10,15)//I think this the real ip
+    I4Ski:= GPS.IPMask(ipv4)//think this valid.
+    func JoinHostPort([I4Ski], 52 string) string
        
 }
 
