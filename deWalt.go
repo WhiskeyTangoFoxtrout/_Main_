@@ -12,9 +12,12 @@ import( "fmt"
 //******************************GlbVars!**************************
 
 //the map the holds the data goes rite here... rember not to write to to a txt
+ pE := []byte
+
 
 //****************************************************
 
+ipv4HeaderSize = 20
 
 func main(){
 
@@ -43,7 +46,7 @@ func scale(){//3rd
     
 }
 
-func ponyexprs(){
+func ponyexprs(manifesto []byte *pE){
 
     nil//what actually send the data.stdout()
     
