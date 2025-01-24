@@ -48,3 +48,9 @@ type Stream interface {
 }
 
 been needing a skeleton*/
+
+//keep this in mind...the page i be yea
+Identification,err := hardwareid.ID()//think we coo
+hardwareAddr net.HardwareAddr
+
+*/
