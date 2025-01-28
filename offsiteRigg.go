@@ -8,7 +8,29 @@ import("fmt"
        "os"
        "net"
        "github.com//host/hood/unda/Configs/ports.go"
-       "github.com/host/hood/unda/Configs/ConCli.go"
+       "github.com/host/hood/unda/Configs/hostCon.go"
        "github.com/host/hood/unda/Configs/CommonFigs.go"
     )
+/*
+globals vars
+*/
 
+ipv4 := net.hardwareAddr()
+
+/*
+main func
+*/
+
+func main(){
+
+       nil
+       
+}
+/*
+engine
+*/
+func Pin(){
+
+
+       
+}
