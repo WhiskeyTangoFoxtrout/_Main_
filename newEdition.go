@@ -4,10 +4,14 @@ package main
 
 import("fmt"
        "net"
-       "github.com/main/WorkSite/InitViewPage-Cli.css"//think this links it
-       "github.com/Configs"
+       "github.com//host/hood/unda/Configs/ports.go"
+       "github.com/host/hood/unda/Configs/ConCli.go"
+       "github.com/host/hood/unda/Configs/CommonFigs.go"
        "os"
       )
+//**************************************************************************************************
+
+//GLOBAL VARS
 
  var Johnreach() := jon
 
@@ -15,23 +19,32 @@ import("fmt"
 
  var postBox = []//this input from the webpage
 
+//***************************************************************************************************************
+
 func main(){
 
     if logn = 0 {
         
         goto lips    
-    }else{searchBar(*usrNput)}//search bar is to look for other pages on the system...so window and fileDir
+    }else{searchBar(*usrNput)}//search bar is to look for other pages on the system...so window and fileDir and the magic sack
     
 }
 
 //********************************************************************BackNFuncs
 
-func Lo()
+func PnI(){//needs dat iper an PORTRS
+
+    ipv4 := net.harwareAddr()//lol go.exe this so wrong LMAO
+    Ipv6.genClien := net.ipv6(ipv4)
+    func JoinHostPort([Ipv6.genClien],string sorkwrk.boomtube.ampBoard()){"BaseBuild1.msn"}
+    
+       
+}
 
 //***************************************************this is mo front-back
 
 func lips(){//talk to em. let em kno who u lookin4
-
+//I can config sum betta its
     jon, err := net.Dial(usrNputAddr)// need to make an conn realquick
     if err != nil {
 
