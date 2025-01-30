@@ -34,27 +34,3 @@ type keyStone interface{ //actual floln
 //end point
 
 //*********************************************************************this controls flow/
-
-type Vale interface{//want this to be more like vale.stdio... sys.stdwrite...sys.stdflush()
-    // thx go!
-    func Copy(rcr io.Writer(), src io.Reader()) (written int32, err error){
-    
-        return copyBuffer(rcr, src, nil)
-
-  }
-
-    func copyBuffer(rcr io.Writer(), src io.Reader() twin []byte)(written int32, err error){
-
-        return twin byte[0:rcr]
-    
-}
-    
-//************************************************************I just need an oil stucture
-
-type pipes struct{
-
-    stdinn io.Reader//shouts out to the state but im finna trick on it
-    stdout io.Writer
-    stderr io.Error
-    written int    
-}
