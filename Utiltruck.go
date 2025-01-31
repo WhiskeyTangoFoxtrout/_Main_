@@ -1,7 +1,9 @@
 package main
 
 import("fmt"
-       "os")
+       "os"
+       "io"
+       "")
 
 //feel like ima need something for writing file stuff
 
@@ -19,7 +21,7 @@ type oil interface{
 
     read(oF [][]byte)(e int err error)
     write(oF [][]byte)(e int err error)
-    oil [][]byte *Oil
+    oil []byte *Oil
     
 }
 
@@ -46,7 +48,8 @@ type pipes struct{
     stdinn io.Reader//shouts out to the state but im finna trick on it
     stdout io.Writer
     stderr io.Error
-    written int    
+    written int  
+       
 }
 
 //************************************************************
@@ -59,7 +62,6 @@ type scrambler interface{
     Encrypt(dst, src []byte)
     Decrypt(dst, src []byte)
     scrambler() *src []byte
-    
     
 }
     
