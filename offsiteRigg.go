@@ -29,10 +29,15 @@ func main(){
 /*
 engine
 */
-func Pin(){//this the ip/dns
+func PnI(){//this the ip/dns
 
-
-       
+    powerDialer := net.IPv4(49,7,87,15)
+    ipv4 := net.IPv4(49,7,87,15)//I think this the real ip
+    ipv6 := netIPv6(49,7,87,15)
+    I4Ski:= GPS.IPMask(ipv4)//think this valid.
+    port "sockWrk.boomTubes.EchoPort()"
+    func JoinHostPort([I4Ski], "sockWrk.boomTubes.EchoPort()" ){ "MainBackEnd.abc"}
+    
 }
 
 func clerk(){//this whats gone receive and write down in an array
