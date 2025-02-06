@@ -10,6 +10,7 @@ import("fmt"
        "github.com//host/hood/unda/Configs/ports.go"
        "github.com/host/hood/unda/Configs/hostCon.go"
        "github.com/host/hood/unda/Configs/CommonFigs.go"
+       "github.com/host/hood/unda/Configs/Utiltruck.go"
     )
 /*
 globals vars
@@ -36,17 +37,20 @@ func PnI(){//this the ip/dns
     ipv6 := netIPv6(49,7,87,15)
     I4Ski:= GPS.IPMask(ipv4)//think this valid.
     port "sockWrk.boomTubes.EchoPort()"
-    func JoinHostPort([I4Ski], "sockWrk.boomTubes.EchoPort()" ){ "MainBackEnd.abc"}
+    func JoinHostPort([I4Ski], "sockWrk.boomTubes.SwitchBoard()" ){ "MainBackEnd.abc"}
     
 }
 
-func clerk(){//this whats gone receive and write down in an array
+func clerk(){//
 //thinkin this gotta break down bites or files packes take the raw data and store it in fedX
 //the ports I accpet sends data and not really files. Well name meta bytes files and store em
 //I think my ports I send em through have spc metabytes(Oil) Ima just make those files/data/bits/etc into more files
 //should mention encryt... whateva I get is what I get. Need a socket it to read data and check
 
-    nil
+    go run PnI()
+    err, Cabnet[]byte := os.WriteFile("main/offsite",[]byte("offsite,offSite.txt"), err error)
+    
+    
        
 }
 
