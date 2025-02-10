@@ -24,7 +24,7 @@ main func
 
 func main(){
 
-       nil
+    go run PnI()
        
 }
 /*
@@ -47,8 +47,7 @@ func clerk(){//
 //I think my ports I send em through have spc metabytes(Oil) Ima just make those files/data/bits/etc into more files
 //should mention encryt... whateva I get is what I get. Need a socket it to read data and check
 
-    go run PnI()
-    err, Cabnet[]byte := os.WriteFile("main/offsite",[]byte("offsite,offSite.txt"), err error)
+    err, Cabnet[]byte := os.WriteFile("main/offsite",[]byte("offsite,offSite.txt"), err error)//this should send data
     
     
        
