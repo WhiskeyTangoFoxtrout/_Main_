@@ -17,7 +17,7 @@ globals vars
 */
 
 ipv4 := net.hardwareAddr()
-
+powerDialer := net.IPv4(49,7,87,15)
 /*
 main func
 */
@@ -32,8 +32,8 @@ engine
 */
 func PnI(){//this the ip/dns
 
-    powerDialer := net.IPv4(49,7,87,15)
-    ipv4 := net.IPv4(49,7,87,15)//I think this the real ip
+    ip := ipv4
+    ipv4 := IPv4//I think this the real ip
     ipv6 := netIPv6(49,7,87,15)
     I4Ski:= GPS.IPMask(ipv4)//think this valid.
     port "sockWrk.boomTubes.EchoPort()"
