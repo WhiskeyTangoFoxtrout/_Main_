@@ -14,7 +14,7 @@ type earConfig struct{//I forgot wat this for
     Nosy (Ear *ListenConfig) Listen(ctx context.Context, "IP","49,7,10,15")(Nosy, error)//idfk
     IP IP //set it to Ip might changeto TCP if I figure packets.
     Mask IPMask // think this mask it
-    const(IPv4len = 4, IPv6 = 16)//syntax mite whoop me
+    const(IPv4len = 4, IPv6 = 16)//syntax mite whoop me,its is gone whoop me LMAOOOOOOOOOOOO
        
 }
 
