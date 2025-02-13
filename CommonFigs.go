@@ -10,15 +10,11 @@ import("fmt"
 
 type PnI interface{
 
-    type PoIp struct{
-
     IP IP
     IPv4 string
     IPv6 string
     port string//trying to put the port and IP together
-    func JoinHostPort([],port string) string//this makes addr that can be sent to other port'd machine
-        
-    }
+	func JoinHostPort([],port string) string//this makes addr that can be sent to other port'd machine
 
 }
 
