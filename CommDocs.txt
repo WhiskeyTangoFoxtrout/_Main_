@@ -33,6 +33,26 @@ With the Ips I got ipv4/6 with the host server and the port connection at 52:
 
 "clientle" refer to client-machines(anything long lns):
     -machines rely fr ear.(reply)/opr(Operator)/switchboard(withHlpfrmDaOpr)/rcr.lo(IpAddr)/,#*sumthing of-Akin*#
+"usrNput" refer to the user Input box#*Which ill ttry to make an obj*#
+"searchBar" refer to the user lookn up diffrent host server on the intranet#def makn dat an obj
+**************************************************************************************HOST MAC************************************************
+
+*'export GODEBUG=netdns=go + 1' joins netdns go and cgo which are diffrent settings:
+    'cgo'(win)::use threads(theactual threads on your CPU)::#*uses the hardware stack*# from the cpu
+    'go' will us the program stack instead of programing the threading hardware stack
+the byteorder is native to the hostCPU#this important bc its how data gets read watch out for that to be on settins in the config folder
+*it does come with its own page:
+    -Im working on it but I have no Idea how to fully write HTML on Go jus yet
+    -
+
+***************************************************
+
+********************************************************************Cline
+
+*Nativemachine Endian byte order.#tells me reads topdown bottem up
+*'postbox':
+    whenever you want to post something like a comment one the __mainserver__(basically townsq) post
+
 
 **********************************************Configs
 
