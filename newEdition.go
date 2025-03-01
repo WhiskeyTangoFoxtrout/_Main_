@@ -12,12 +12,10 @@ import("fmt"
 //**************************************************************************************************
 
 //GLOBAL VARS
-
- var Johnreach() := jon
-
- var globalDNSLookup = nil //still trynna figure a method where the user inputs a web address and I can look it up or convert it
-
- var postBox = []//this input from the webpage
+  var nativeEdian binary.ByteOrder
+  var Johnreach() := jon
+  var globalDNSLookup = nil //still trynna figure a method where the user inputs a web address and I can look it up or convert it
+  var postBox = []//this input from the webpage
 
 //***************************************************************************************************************
 
