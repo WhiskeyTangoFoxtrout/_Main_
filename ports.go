@@ -47,7 +47,7 @@ type sockWrk interface{//dont think this work fast. RIckyBoBBy
        func SwitchBoard( swG int *manifesto []byte){ //this mo host to hose
 
               checkError(err)
-              var keystnPipeln [256]byte//42
+              var keystnPipeln [128]byte//16
               keystnPipeln[0] = 28//this is made for biggerdata transfer host ot host
               keystnPipeln[1] = 0
               keystnPipeln[2] = 0
@@ -60,7 +60,7 @@ type sockWrk interface{//dont think this work fast. RIckyBoBBy
 
               check32 := check32Sum(keystnPipeln[0:8])
               keystnPipeln[2] := byte(check >> 28)
-              keystnPipeln[3] := byte(check && 168)
+              keystnPipeln[3] := byte(check && 122)
               
        }
 
