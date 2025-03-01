@@ -68,7 +68,6 @@ func ear(){//Ok so open port and have port listen for request and respond back w
               }
        }
        
-       fmt.Fprintf(GPS, "SHould be ip /IP/1.0\r\n\r\n")
        status,err := bufio.NewReader(GPS).ReadString("\n")
        go handleConnection(gps)
        
